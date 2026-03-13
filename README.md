@@ -1,33 +1,31 @@
-﻿# Portfolio Starter
+# Portfolio Starter
 
-Simple static portfolio prepared for GitHub Pages.
+Static portfolio and printable CV prepared for GitHub Pages.
 
 ## Files
 
-- `index.html` - main page content
-- `styles.css` - styling and layout
+- `index.html` - recruiter-facing portfolio homepage
+- `cv.html` - print-friendly CV page for browser PDF export
+- `styles.css` - shared styling for the site and CV
 
 ## Customize
 
-Replace these placeholders in `index.html`:
+Good next improvements:
 
-- `[your-email]`
-- `[your-linkedin-url]`
-- `[your-github-url]`
-- `[your-cv-url]`
-
-You can also:
-
-- add screenshots inside each project card
-- add links to demos or repositories
-- refine bullet points for specific job targets
+- replace the placeholder visual panels with real screenshots
+- add links to demos or repositories where appropriate
+- export `cv.html` to PDF and commit the final PDF later
 
 ## Publish on GitHub Pages
 
-1. Create a repository, for example `portfolio` or `yourusername.github.io`.
-2. Upload `index.html` and `styles.css`.
-3. In GitHub, open `Settings` > `Pages`.
-4. Set the source to the main branch root folder.
-5. Save and wait for the deployment link.
+1. Commit and push the files to your GitHub Pages repository.
+2. Open the repository in GitHub.
+3. Go to `Settings` > `Pages`.
+4. Confirm the site is publishing from the `main` branch root.
 
-If you use `yourusername.github.io` as the repository name, the page will be available at the root domain for your account.
+## Export CV to PDF
+
+1. Open `cv.html` in the browser.
+2. Use the browser print dialog.
+3. Save as PDF.
+4. If needed, adjust print scale or margins for a cleaner one-page export.

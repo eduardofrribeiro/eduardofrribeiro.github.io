@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eduardo Ribeiro | Full-stack Software Engineer</title>
-  <meta name="description" content="Portfolio of Eduardo Ribeiro, a Full-stack Software Engineer working across AI, energy, web, and mobile platforms.">
+  <meta name="description" content="Portfolio of Eduardo Ribeiro, a Full-stack Software Engineer working across AI, energy, web, mobile, and enterprise platforms.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
@@ -17,112 +17,170 @@
       <div class="nav-links">
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
+        <a href="cv.html">CV</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
     <div class="hero-content" id="top">
       <p class="eyebrow">Full-stack Software Engineer</p>
-      <h1>Full-stack engineer building AI-enabled products, energy platforms, and reliable user-facing software.</h1>
+      <h1>Building AI-enabled, data-driven products that turn complex systems into usable software.</h1>
       <p class="intro">
-        I build full-stack products from idea to delivery, with hands-on experience across frontend, backend, APIs, deployment, and integration work. My recent projects span trustworthy AI, energy systems, optimization workflows, mobile apps, and enterprise software.
+        I build full-stack products from architecture to delivery, with hands-on work across frontend, backend,
+        APIs, deployment, and integration. My recent experience spans trustworthy AI, energy platforms,
+        optimization workflows, mobile apps, and enterprise software.
       </p>
       <div class="hero-actions">
         <a class="button primary" href="#projects">Explore Projects</a>
-        <a class="button secondary" href="#contact">Get in Touch</a>
+        <a class="button secondary" href="cv.html">Open CV</a>
       </div>
       <ul class="quick-facts">
         <li>Based in Porto, Portugal</li>
-        <li>Stack: React, Python, FastAPI, Java, Angular, Docker</li>
-        <li>Focus: Full-stack, AI integration, energy platforms</li>
+        <li>React, Python, FastAPI, Java, Angular, Docker</li>
+        <li>Focus: full-stack, AI integration, energy and platform products</li>
       </ul>
     </div>
   </header>
 
   <main>
     <section class="section" id="projects">
-      <div class="section-heading">
+      <div class="section-heading narrow">
         <p class="eyebrow">Selected Work</p>
-        <h2>Project highlights</h2>
+        <h2>Mini case studies</h2>
         <p>
-          These projects show the range of my work across platform ownership, AI integration, energy systems, productization of research, and enterprise software delivery.
+          This portfolio is structured to give recruiters and hiring managers more context than a one-page CV can.
+          Each project highlights the problem, my contribution, and the technical scope behind the work.
         </p>
       </div>
 
-      <div class="project-grid">
-        <article class="project-card feature">
-          <div class="card-tag">Current Role</div>
-          <h3>EnerTEF - OASIS Platform</h3>
-          <p class="meta">INESC TEC | React, Tailwind CSS, Python, FastAPI, Docker, Ollama</p>
-          <p>
-            Led the technical implementation of the Portuguese node of EnerTEF, a European initiative for trustworthy AI testing and experimentation in the energy sector.
-          </p>
-          <ul>
-            <li>Designed and built the platform from scratch across frontend, backend, service integration, and deployment.</li>
-            <li>Integrated live and historical energy datasets, time-series workflows, forecasting, and imputation services.</li>
-            <li>Integrated an LLM-powered assistant for dataset discovery, service selection, job configuration, and result explanation.</li>
-          </ul>
-          <p class="note">Good place to add screenshots of the dashboard, assistant flow, or service catalog.</p>
+      <div class="case-study-list">
+        <article class="case-study feature-case">
+          <div class="case-copy">
+            <div class="card-tag">Current Role</div>
+            <h3>EnerTEF - OASIS Platform</h3>
+            <p class="meta">INESC TEC | React, Tailwind CSS, Python, FastAPI, Docker, Ollama, Chronos-2</p>
+            <p>
+              Led the technical implementation of the Portuguese node of EnerTEF, a European initiative for trustworthy AI
+              testing and experimentation in the energy sector.
+            </p>
+            <div class="case-columns">
+              <div>
+                <h4>Challenge</h4>
+                <p>Build a production-like platform from scratch that could expose datasets, AI services, and experimentation workflows inside a federated European environment.</p>
+              </div>
+              <div>
+                <h4>What I delivered</h4>
+                <p>Designed and built the platform end to end across frontend, backend, service integration, and deployment, while taking technical ownership of the Portuguese node.</p>
+              </div>
+            </div>
+            <ul class="outcome-list">
+              <li>Integrated live and historical energy datasets, external APIs, time-series workflows, forecasting, and imputation services.</li>
+              <li>Built an LLM-powered assistant for dataset discovery, service selection, job configuration, and result explanation.</li>
+              <li>Worked across product architecture, implementation, and maintenance in a distributed multi-node environment.</li>
+            </ul>
+          </div>
+          <div class="case-visual">
+            <div class="visual-frame warm">
+              <span class="visual-label">Suggested screenshot</span>
+              <strong>Dashboard or service catalog</strong>
+              <p>Replace this panel with a real screenshot of the OASIS interface, assistant, or data exploration flow.</p>
+            </div>
+            <div class="visual-frame dark">
+              <span class="visual-label">Optional supporting image</span>
+              <strong>Architecture or assistant flow</strong>
+              <p>A simple diagram or cropped UI flow would work well here.</p>
+            </div>
+          </div>
         </article>
 
-        <article class="project-card">
-          <h3>DigitalCER Platform</h3>
-          <p class="meta">INESC TEC | Python, FastAPI, JavaScript, Microservices, Docker Compose</p>
-          <p>Renewable Energy Community management platform supporting operational workflows, dashboards, and market-related data integration.</p>
-          <ul>
-            <li>Worked across a 4-microservice architecture covering backend, frontend, and market integration.</li>
-            <li>Delivered maintenance and new features for REC-related workflows and platform evolution.</li>
-            <li>Supported deployment and VPS-based environments, including MIBEL-related integrations.</li>
-          </ul>
+        <article class="case-study">
+          <div class="case-copy">
+            <h3>DigitalCER Platform</h3>
+            <p class="meta">INESC TEC | Python, FastAPI, JavaScript, Microservices, Docker Compose, PostgreSQL</p>
+            <p>
+              Renewable Energy Community management platform supporting operations, dashboards, and market-related data integration.
+            </p>
+            <div class="case-columns compact">
+              <div>
+                <h4>Scope</h4>
+                <p>Worked across a 4-microservice architecture covering backend, frontend, market integration, and deployment.</p>
+              </div>
+              <div>
+                <h4>Contribution</h4>
+                <p>Delivered maintenance and feature work for REC workflows, data handling, debugging, and VPS-based environments.</p>
+              </div>
+            </div>
+            <ul class="outcome-list">
+              <li>Supported MIBEL-related integrations and platform evolution.</li>
+              <li>Worked with Docker Compose, GitLab, and staging and production deployments.</li>
+            </ul>
+          </div>
+          <div class="case-visual single">
+            <div class="visual-frame soft">
+              <span class="visual-label">Suggested screenshot</span>
+              <strong>Dashboard or community management flow</strong>
+              <p>Add a UI capture that shows the operational side of the platform.</p>
+            </div>
+          </div>
         </article>
 
-        <article class="project-card">
-          <h3>REC Sizing Display App</h3>
-          <p class="meta">INESC TEC | React, JavaScript, Python, FastAPI, MILP</p>
-          <p>Full-stack application built to make a research-oriented sizing and optimization model usable by end users in Renewable Energy Community planning scenarios.</p>
-          <ul>
-            <li>Built the frontend workflow for scenario configuration and result visualization.</li>
-            <li>Implemented the integration layer needed to expose the optimization engine through an application interface.</li>
-            <li>Helped translate technical analytical tooling into a more accessible product experience.</li>
-          </ul>
+        <article class="case-study split-pair">
+          <div class="case-copy">
+            <h3>REC Sizing Display App</h3>
+            <p class="meta">INESC TEC | React, JavaScript, Python, FastAPI, MILP</p>
+            <p>
+              Full-stack application created to make a research-oriented optimization model usable by end users in Renewable Energy Community planning scenarios.
+            </p>
+            <ul class="outcome-list">
+              <li>Built the frontend flow for scenario configuration and result visualization.</li>
+              <li>Implemented the integration layer needed to expose the optimization engine through an application-oriented interface.</li>
+              <li>Helped translate analytical tooling into a more accessible software product.</li>
+            </ul>
+          </div>
+          <div class="case-copy">
+            <h3>HEMS COSMIC</h3>
+            <p class="meta">INESC TEC | React Native, Expo, JavaScript, REST APIs</p>
+            <p>
+              Mobile Home Energy Management System designed to help users plan next-day electricity usage and visualize optimized appliance schedules.
+            </p>
+            <ul class="outcome-list">
+              <li>Developed mobile flows for appliance setup, scheduling, and optimization result visualization.</li>
+              <li>Integrated backend APIs and energy-related data into a user-friendly app experience.</li>
+              <li>Supported Shelly device integration for consumption and forecast-related information.</li>
+            </ul>
+          </div>
         </article>
 
-        <article class="project-card">
-          <h3>HEMS COSMIC</h3>
-          <p class="meta">INESC TEC | React Native, Expo, JavaScript, REST APIs</p>
-          <p>Mobile Home Energy Management System designed to help users plan next-day electricity usage and visualize optimized appliance schedules.</p>
-          <ul>
-            <li>Developed mobile flows for appliance setup, scheduling, and optimization result visualization.</li>
-            <li>Integrated backend APIs and energy-related data into a user-friendly app experience.</li>
-            <li>Supported Shelly device integration for consumption and forecast-related information.</li>
-          </ul>
-        </article>
-
-        <article class="project-card">
-          <h3>LIDL Campaigns Module</h3>
-          <p class="meta">mgm technology partners | Java, Apache Wicket, HTML, CSS</p>
-          <p>Enterprise software work focused on campaign management modules used in retail workflows.</p>
-          <ul>
-            <li>Developed features and resolved bugs in collaboration with an international team.</li>
-            <li>Improved stability and maintainability of campaign-related modules.</li>
-            <li>Contributed testing and data-table related functionality aligned with business requirements.</li>
-          </ul>
-        </article>
-
-        <article class="project-card">
-          <h3>Firefighter Web Application</h3>
-          <p class="meta">Proactive Swiss | Angular, TypeScript, Java, Grails</p>
-          <p>Business application developed for firefighters, with work spanning frontend, backend, testing, and Agile collaboration.</p>
-          <ul>
-            <li>Maintained and extended application features across client and server layers.</li>
-            <li>Collaborated with developers and business stakeholders in an Agile environment.</li>
-            <li>Improved reliability through bug fixing and unit testing.</li>
-          </ul>
+        <article class="case-study split-pair enterprise-case">
+          <div class="case-copy">
+            <h3>LIDL Campaigns Module</h3>
+            <p class="meta">mgm technology partners | Java, Apache Wicket, HTML, CSS</p>
+            <p>
+              Enterprise software work focused on campaign management modules used in retail workflows.
+            </p>
+            <ul class="outcome-list">
+              <li>Developed features and resolved bugs in collaboration with an international team.</li>
+              <li>Improved stability and maintainability of campaign-related modules.</li>
+              <li>Contributed testing and data-table functionality aligned with business requirements.</li>
+            </ul>
+          </div>
+          <div class="case-copy">
+            <h3>Firefighter Web Application</h3>
+            <p class="meta">Proactive Swiss | Angular, TypeScript, Java, Grails</p>
+            <p>
+              Business application developed for firefighters, with work spanning frontend, backend, testing, and Agile collaboration.
+            </p>
+            <ul class="outcome-list">
+              <li>Maintained and extended application features across client and server layers.</li>
+              <li>Collaborated with developers and business stakeholders in an Agile environment.</li>
+              <li>Improved reliability through bug fixing and unit testing.</li>
+            </ul>
+          </div>
         </article>
       </div>
     </section>
 
     <section class="section spotlight" id="experience">
-      <div class="section-heading">
+      <div class="section-heading narrow">
         <p class="eyebrow">Experience Snapshot</p>
         <h2>Where I have worked</h2>
       </div>
@@ -146,17 +204,19 @@
     </section>
 
     <section class="section" id="about">
-      <div class="section-heading">
-        <p class="eyebrow">How I Work</p>
-        <h2>What I enjoy building</h2>
+      <div class="section-heading narrow">
+        <p class="eyebrow">Working Style</p>
+        <h2>How I approach software work</h2>
       </div>
       <div class="two-column">
-        <div>
+        <div class="story-panel">
           <p>
-            I enjoy working where software engineering meets real operational problems. Much of my recent experience sits at the intersection of product delivery, data integration, and applied research.
+            I enjoy working where software engineering meets real operational problems. Much of my recent work sits at the intersection of
+            product delivery, data integration, and applied research.
           </p>
           <p>
-            The work I find most motivating usually involves ownership, cross-functional problem solving, and building interfaces that make complex systems easier to use.
+            The projects that motivate me most tend to involve ownership, cross-functional problem solving, and turning technically complex systems
+            into tools that people can actually use with confidence.
           </p>
         </div>
         <div class="skills-panel">
@@ -165,26 +225,27 @@
             <li>React / React Native</li>
             <li>JavaScript / TypeScript</li>
             <li>Python / FastAPI</li>
-            <li>Java / Grails</li>
+            <li>Java / Grails / Apache Wicket</li>
             <li>Docker / Docker Compose</li>
             <li>REST APIs / Microservices</li>
             <li>LLM Integration / Ollama</li>
-            <li>Forecasting / Optimization</li>
+            <li>Forecasting / Optimization / Time-series data</li>
           </ul>
         </div>
       </div>
     </section>
 
     <section class="section contact" id="contact">
-      <div class="section-heading">
+      <div class="section-heading narrow">
         <p class="eyebrow">Contact</p>
-        <h2>Let’s connect</h2>
+        <h2>Let?s connect</h2>
         <p>If you are hiring for full-stack, platform, or AI-adjacent engineering roles, I would be glad to connect.</p>
       </div>
       <div class="contact-card">
         <a href="mailto:eduardofrribeiro@gmail.com">eduardofrribeiro@gmail.com</a>
         <a href="https://www.linkedin.com/in/eduardo-fr-ribeiro">LinkedIn</a>
         <a href="https://github.com/eduardofrribeiro">GitHub</a>
+        <a href="cv.html">CV</a>
       </div>
     </section>
   </main>

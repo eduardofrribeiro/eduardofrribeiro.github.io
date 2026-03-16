@@ -7,14 +7,17 @@ Static portfolio and printable CV prepared for GitHub Pages.
 - `index.html` - recruiter-facing portfolio homepage
 - `cv.html` - print-friendly CV page for browser PDF export
 - `styles.css` - shared styling for the site and CV
+- `assets/images/projects/` - project screenshots used by the site
 
-## Customize
+## Current image mapping
 
-Good next improvements:
-
-- replace the placeholder visual panels with real screenshots
-- add links to demos or repositories where appropriate
-- export `cv.html` to PDF and commit the final PDF later
+- `enertef-forecast.png`
+- `enertef-chat.png`
+- `digitalcer-omie-chart.png`
+- `digitalcer-login.png`
+- `rec-sizing-network.png`
+- `rec-sizing-results.png`
+- `hems-mobile-dashboard.png`
 
 ## Publish on GitHub Pages
 

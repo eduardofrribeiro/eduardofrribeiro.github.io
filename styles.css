@@ -154,6 +154,12 @@ figcaption {
 h2 { margin: 0; font-size: clamp(2rem, 3vw, 3rem); }
 
 .case-study-list { display: grid; gap: 1.25rem; }
+.case-row.two-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
 
 .case-study,
 .timeline article,
@@ -241,6 +247,10 @@ h2 { margin: 0; font-size: clamp(2rem, 3vw, 3rem); }
 .case-visual { display: grid; gap: 1rem; align-content: start; min-width: 0; }
 .with-image { display: grid; gap: 1rem; min-width: 0; }
 .mobile-showcase { grid-template-columns: minmax(0, 1fr) 190px; align-items: start; }
+.stacked-copy { align-content: start; }
+.compact-case { grid-template-columns: 1fr; }
+.compact-case .case-copy { min-width: 0; }
+.separated-mobile { grid-template-columns: minmax(0, 1fr) 170px; gap: 1.1rem; align-items: start; }
 
 .image-card {
   margin: 0;
@@ -394,7 +404,8 @@ h2 { margin: 0; font-size: clamp(2rem, 3vw, 3rem); }
   .two-column,
   .cv-grid,
   .cv-header,
-  .mobile-showcase {
+  .mobile-showcase,
+  .case-row.two-cards {
     grid-template-columns: 1fr;
   }
 

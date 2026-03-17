@@ -483,15 +483,37 @@ h2 { margin: 0; font-size: clamp(2rem, 3vw, 3rem); }
 .cv-print-note { margin-top: 1rem; color: var(--muted); font-size: 0.85rem; }
 
 @media (max-width: 920px) {
+  .hero,
+  .section,
+  .cv-page {
+    width: min(100vw - 1.25rem, 100% - 1.25rem);
+    max-width: calc(100vw - 1.25rem);
+  }
+
   .case-study,
   .split-pair,
   .timeline,
   .two-column,
   .cv-grid,
   .cv-header,
-  .mobile-showcase,
+  .polished-copy,
+  .mobile-polish,
+  .case-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .case-study,
+  .timeline article,
+  .story-panel,
+  .skills-panel,
+  .contact-card,
+  .cv-sheet {
+    border-radius: 20px;
+  }
+
   .case-study {
     padding: 1rem;
+    gap: 1rem;
   }
 
   .case-visual,
@@ -504,17 +526,150 @@ h2 { margin: 0; font-size: clamp(2rem, 3vw, 3rem); }
     margin-left: 0;
   }
 
-  .cv-contact { justify-items: start; text-align: left; }
+  .centered-visual .image-card,
+  .image-card.tall,
+  .premium-phone {
+    justify-self: center;
+  }
+
+  .premium-phone {
+    max-width: 240px;
+  }
+
+  .rec-case {
+    min-height: 0;
+  }
+
+  .soft-shot,
+  .elevated-shot {
+    transform: none;
+  }
+
+  .timeline {
+    grid-template-columns: 1fr;
+  }
+
+  .cv-contact {
+    justify-items: start;
+    text-align: left;
+  }
 }
 
 @media (max-width: 640px) {
-  .hero { min-height: auto; padding-bottom: 2.5rem; }
-  .topbar { flex-direction: column; align-items: flex-start; }
-  .nav-links { flex-wrap: wrap; gap: 0.85rem; }
-  h1 { max-width: none; }
-  .hero-content { padding-top: 2.5rem; }
+  .hero {
+    min-height: auto;
+    padding: 0.75rem 0 2.25rem;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.85rem;
+  }
+
+  .brand {
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.6rem;
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 42px;
+    border-radius: 999px;
+    background: rgba(255, 250, 243, 0.84);
+    border: 1px solid rgba(124, 45, 18, 0.10);
+  }
+
+  .hero-content {
+    padding-top: 1.2rem;
+  }
+
+  .eyebrow {
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+  }
+
+  h1 {
+    font-size: clamp(2.2rem, 12vw, 3.3rem);
+    line-height: 0.98;
+    max-width: 10ch;
+  }
+
+  .intro,
+  .section-heading p,
+  .case-copy p,
+  .case-copy li,
+  .timeline p,
+  .story-panel p,
+  figcaption {
+    font-size: 0.98rem;
+    line-height: 1.55;
+  }
+
+  .hero-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .quick-facts li {
+    width: 100%;
+  }
+
+  .section {
+    padding: 1.25rem 0 2.5rem;
+  }
+
+  .section-heading {
+    margin-bottom: 1.35rem;
+  }
+
+  h2 {
+    font-size: clamp(1.7rem, 8vw, 2.25rem);
+  }
+
+  .case-copy h3,
+  .timeline h3,
+  .skills-panel h3 {
+    font-size: 1.2rem;
+  }
+
+  .card-tag,
+  .role-tags span,
+  .arch-flow span {
+    font-size: 0.78rem;
+  }
+
   .case-columns,
-  .cv-item-title-row { grid-template-columns: 1fr; display: grid; }
+  .dual-shot-stack {
+    gap: 0.8rem;
+  }
+
+  .contact-card {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .skills-list li {
+    padding: 0.62rem 0;
+  }
 }
 
 @media print {
